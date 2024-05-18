@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Mam_marj@</title>
+    <style type="text/css" media="all">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            color: #333;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: relative;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        header h1 {
+            color: #fff;
+            text-shadow: 0px 0px 10px white;
+            font-size: 2em;
+            margin-left: 10px;
+        }
+        header img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            box-shadow: 0 0 5px green;
+            background-color: transparent;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ddd;
+        }
+        header .icons {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+        header .icons a {
+            font-size: 1.5em;
+            text-decoration: none;
+            transition: color 0.3s;
+            padding: 10px;
+            height: auto;
+        }
+        header .icons a:hover {
+            color: #ddd;
+        }
+        .fa-house {
+            color: #ff0000;
+        }
+        .fa-facebook {
+            color: #1877F2;
+        }
+        .fa-instagram {
+            color: #E1306C;
+        }
+        .fa-twitter {
+            color: #1DA1F2;
+        }
+        .container {
+            width: 100%;
+            padding: 20px 0;
+            color: white;
+            flex: 1;
+        }
+        .first {
+            background-color: white;
+            box-shadow: 0 0 10px black;
+            color: black;
+            width: 90%;
+            margin: 0 auto;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 40px 10px;
+            margin-bottom: 10px;
+        }
+        .second {
+            background-color: white;
+            box-shadow: 0 0 10px black;
+            color: black;
+            width: 90%;
+            margin: 0 auto;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 40px 10px;
+            margin-top: 10px;
+        }
+        .first h2, .second h2 {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .first p, .second ul {
+            text-align: left;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+        .second ul {
+            padding: 0;
+        }
+        .second ul li {
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            header h1 {
+                font-size: 1.5em;
+            }
+            nav ul {
+                flex-direction: column;
+                width: 100%;
+            }
+            nav ul li {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            nav ul li a {
+                font-size: 1em;
+            }
+            .first, .second {
+                padding: 20px 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            header {
+                padding: 10px;
+            }
+            header h1 {
+                font-size: 1.2em;
+            }
+            header img {
+                width: 40px;
+                height: 40px;
+            }
+            nav ul li a {
+                font-size: 0.9em;
+            }
+            .first p, .second ul {
+                max-width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="marj.jpg" alt="Profile Image"/>
+            <h1>@cherMajo_Official</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="https://www.example.com" target="_blank"><i class="fa-solid fa-house"></i></a>
+            <a href="https://m.facebook.com/profile.php?id=100048992857127" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </header>
+    <div class="container">
+        <div id="about" class="first">
+            <h2>About</h2>
+            <p>
+                Welcome! I am <b>Marjorie Asi Aclan</b> an enthusiastic student teacher specializing in elementary education. 
+                My passion lies in nurturing young minds and fostering a love for learning in children. 
+                I believe in creating a positive and engaging classroom environment where every student 
+                feels valued and encouraged to reach their full potential.
+            </p>
+        </div>
+        <div id="skills" class="second">
+            <h2>Skills</h2>
+            <ul>
+                <li>Lesson Planning and Curriculum Development</li>
+                <li>Classroom Management and Student Engagement</li>
+                <li>Creative and Interactive Teaching Methods</li>
+                <li>Strong Communication and Interpersonal Skills</li>
+                <li>Adaptability and Problem-Solving Abilities</li>
+                <li>Proficient in Educational Technology</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Marjorie Asi Aclan. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
